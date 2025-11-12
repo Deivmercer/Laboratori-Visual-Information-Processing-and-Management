@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\lstdefinestyle{style}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=style}
+\title{
+	Assignment 4 \\
+	\large Visual Information Processing and Management}
+\author{Davide Costantini, 856114}
+\date{6 novembre 2024}
+\begin{document}
+	\maketitle
+	\newpage
+	\section{Camera Pipeline}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\columnwidth]{images/result}
+        \caption{Risultato}
+    \end{figure}
+    \newpage
+    \lstinputlisting[language=Matlab]{../camera_pipeline_assignment.m}
+\end{document}
