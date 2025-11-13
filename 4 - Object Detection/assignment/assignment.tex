@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\lstdefinestyle{style}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=style}
+\title{
+	Assignment 4 \\
+	\large Visual Information Processing and Management}
+\author{Davide Costantini, 856114}
+\date{13 novembre 2025}
+\begin{document}
+	\maketitle
+	\newpage
+	\section{Object Instance Detection}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\columnwidth]{images/matches}
+        \caption{Match}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\columnwidth]{images/boundingBox.png}
+        \caption{Bounding Box}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\columnwidth]{images/contour}
+        \caption{Contorno}
+    \end{figure}
+	\section{Codice}
+    \lstinputlisting[language=Matlab]{../object_instance_detection_assignment.m}
+\end{document}
