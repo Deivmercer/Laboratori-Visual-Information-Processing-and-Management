@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\lstdefinestyle{style}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=style}
+\title{
+	Assignment 6 \\
+	\large Visual Information Processing and Management}
+\author{Davide Costantini, 856114}
+\date{4 dicembre 2025}
+\begin{document}
+	\maketitle
+	\newpage
+	\section{Transfer Learning}
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabular}{l|c|c|c|c}
+                        & \textbf{1-NN} & \textbf{1-NN normalizzato} & \textbf{SVM} & \textbf{SVM normalizzato} \\
+                \hline
+                pool1   & 58\%          & 56.67\%                    & 70.33\%      & 73\%                      \\
+                relu4   & 48\%          & 83.33\%                    & 47.33\%      & 81.33\%                   \\
+                drop7   & 89.67\%       & 94.33\%                    & 91.67\%      & 92.33\%                   \\
+            \end{tabular}
+        \end{center}
+    \end{table}
+	\section{Codice}
+    \lstinputlisting[language=Matlab]{../tf_fe_assignment_svm.m}
+\end{document}
